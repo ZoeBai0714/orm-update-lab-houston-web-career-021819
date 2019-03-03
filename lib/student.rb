@@ -53,10 +53,8 @@ def self.create(name, grade)
   student.save
 end
 
-def self.new_from_db(student_row)
-  
-  self.create(student[1], student[2])
-  
+def self.new_from_db(student)
+  Student.new(student[0], student[1], student[2])
 end
 
 end
