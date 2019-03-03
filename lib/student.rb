@@ -48,7 +48,7 @@ def update
     )
 end
 
-def self.create
+def self.create(name, grade)
   student =  Student.new()
 end
 
