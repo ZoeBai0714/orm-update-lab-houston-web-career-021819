@@ -62,7 +62,7 @@ def self.find_by_name(name)
     "SELECT * FROM students WHERE name = ?",
     [name]
     )
-  self.new_from_db
+  self.new_from_db(results[0])
 end
 
 end
