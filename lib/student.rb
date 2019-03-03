@@ -57,4 +57,7 @@ def self.new_from_db(student)
   Student.new(student[0], student[1], student[2])
 end
 
+def self.find_by_name
+end
+
 end
