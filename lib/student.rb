@@ -48,4 +48,7 @@ def update
     )
 end
 
+def self.create
+end
+
 end
