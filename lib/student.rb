@@ -53,7 +53,7 @@ def self.create(name, grade)
   student.save
 end
 
-def 
+def new_from_db
 end
 
 end
