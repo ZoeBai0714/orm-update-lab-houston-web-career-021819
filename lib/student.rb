@@ -54,6 +54,7 @@ def self.create(name, grade)
 end
 
 def self.new_from_db(student)
+  binding.pry
   self.create(student.name, student.grade)
 end
 
