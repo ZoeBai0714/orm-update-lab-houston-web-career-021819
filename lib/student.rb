@@ -49,7 +49,7 @@ def update
 end
 
 def self.create
-  
+  student =  Student.new()
 end
 
 end
