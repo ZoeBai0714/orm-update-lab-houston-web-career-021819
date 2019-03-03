@@ -58,10 +58,11 @@ def self.new_from_db(student)
 end
 
 def self.find_by_name(name)
-  DB[:conn].execute(
+  results = DB[:conn].execute(
     "SELECT * FROM students WHERE name = ?",
     [name]
     )
+  results[0]  
 end
 
 end
