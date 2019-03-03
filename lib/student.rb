@@ -41,11 +41,11 @@ def save
   end
 end
 
-def update(song)
+def update
   DB[:conn].execute("
     UPDATE students SET name = ?, grade = ?, WHERE id = ?
   ",
-    [song.name, song.grade, song.id]
+    [self.name, self.grade, self.id]
     )
 end
 
