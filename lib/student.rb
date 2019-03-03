@@ -37,7 +37,7 @@ def save
     [self.name, self.grade]
     )
     self.id = DB[:conn].last_insert_row_id
-    #binding.pry
+   
   end
 end
 
